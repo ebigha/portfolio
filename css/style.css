@@ -361,7 +361,7 @@ input[type=submit]:hover {
   letter-spacing: .13em; /* Adjust as needed */
   animation: 
     typing 5s steps(20) 1s 1 normal both,
-    blink-caret 500ms steps(20) infinite normal;
+    blink-caret 500ms steps(20) normal both;
 }
 
 /* The typing effect */
