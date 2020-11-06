@@ -466,7 +466,7 @@ input[type=submit]:hover {
   .nav_item a{
     padding: 10px;
   }
-
+}
 
 
 @media (prefers-reduced-motion: reduce) {
@@ -475,4 +475,3 @@ input[type=submit]:hover {
     overflow: visible;
     border-right: 0 solid transparent; /* The typwriter cursor */
   }
-}
