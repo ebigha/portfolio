@@ -1,0 +1,476 @@
+
+body{
+  font-family: "lato-regular", "helvetica", sans-serif; /* Test for this*/
+   /* test for this! Make all sizes em or rem */
+  src: url('/font/lato-regular.ttf');
+  color: #2B4257;
+
+}
+
+
+header h1{
+  font-size: 2em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+  text-align: left;
+  align-content: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+
+h1{
+font-size: 2em;
+text-align: center;
+margin-left: .5em;
+line-height: 2em;
+}
+
+.skip{
+text-align: right;
+}
+
+header{
+  background: #DDDCDC;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  align-content: center;
+  /*border-bottom: 3px solid #2B4257;*/
+
+ 
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-decoration-style: none;
+  padding: 1em;
+
+  
+
+}
+
+h2{
+  font-size: 1.5em;
+  text-align: left;
+  padding: 10px;
+  margin-top: 1em;
+}
+
+h2{
+  margin-top: 2em;
+  font-size: 1.5em;
+  background-color: #DDDCDC;
+  color: #2B4257;
+  }
+
+h3{
+  margin-top: 1.5em;
+  margin-left: .5em;
+  font-size: 1em;
+
+}
+
+p {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  line-height: normal;
+  min-height: 2;
+  font-size: 1em;
+}
+
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;  
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:20px;
+  padding: 1em;
+  color: #2B4257;
+  background-color: #DDDCDC;
+  border: limegreen, none;
+}
+
+header a{
+  color: #2B4257;
+  text-decoration-style: none;
+  text-emphasis: center;
+
+}
+
+.active{
+  color: #1A691A;
+  text-transform: uppercase;
+  text-emphasis: bold;
+}
+
+li{
+  text-decoration: none;
+  padding: .2em;
+  text-align: center;
+}
+
+li a{
+  text-decoration: none;
+}
+
+li a:hover{
+  text-decoration: underline;
+}
+
+
+*:focus{
+  border: 2px solid black;
+}
+
+footer{
+  background-color: #DDDCDC;
+  color: #2B4257;
+  padding: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+footer i{
+  color:  #2B4257;
+  width: 40px;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+  margin: auto 0;
+  padding-top: 1em;
+}
+
+
+
+
+.projects{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  margin: 0 auto;
+  vertical-align: middle;
+  padding-right: 5px;
+  
+}
+
+.projects > div {
+  text-align: center;
+  padding: 5%;
+  font-size: 30px;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  margin: 0 auto;
+
+}
+
+
+.projects-center{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.projects img{
+  width: 14em;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  margin: auto 0;
+}
+
+
+.images{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  margin: 0 auto;
+  
+}
+
+.images:hover{helppppp
+  opacity: 70%;
+  border: tomato;
+}
+
+.images > div {
+  text-align: center;
+  padding: 2%;
+  font-size: 1em;
+}
+
+
+.images-center{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+div img{
+  width: 95%;
+  height: auto;
+  align-items: center;
+}
+
+div.me{
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+footer p{
+  font-size: 1em;
+}
+
+.about-text p{
+  text-align: left;
+  padding: 4px;
+  margin: 4px;
+}
+
+.about{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/*.me img{
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  margin: auto 0;
+}*/
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  border: 1px solid #f1f1f1;
+  margin: auto;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  text-align: center;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color:  #2B4257;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 10px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  font-family: "lato-regular";
+  border-radius: 6px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  align-content: center;
+  background-color: #2B4257;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: auto 0;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: rgb(9, 51, 68);
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.typewriter h1 {
+  color: #2B4257;
+  font-family: "lato-regular";
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .13em solid limegreen; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .13em; /* Adjust as needed */
+  animation: 
+    typing 5s steps(20) 1s 1 normal both,
+    blink-caret 500ms steps(20) infinite normal;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 11em;}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-right-color: #1A691A }
+  50% { border-right-color: transparent; }
+}
+
+
+#parallax {
+  padding: 0;
+  background-image: url("../images/stickies.jpg");
+
+  width: 100%;
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+@media screen and (min-width: 550px){
+  .projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+    
+  }
+  header nav{
+  display:flex;
+  flex-direction: row;
+  align-items: right;
+  align-content: space-between;
+  }
+ 
+
+  .about{
+    display: flex;
+    flex-direction: row;
+  }
+
+  header{
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  .nav_links{
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  .nav_item a{
+    padding: 10px;
+  }
+
+
+
+}
+
+@media screen and (min-width: 800px){
+
+  .projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+    
+  }
+
+  .about{
+    display: flex;
+    flex-direction: row;
+  }
+
+  header{
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  .nav_links{
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  .nav_item a{
+    padding: 10px;
+  }
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  .typewriter h1: {
+    animation: none;
+  }
+}
