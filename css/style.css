@@ -472,5 +472,7 @@ input[type=submit]:hover {
 @media (prefers-reduced-motion: reduce) {
   .typewriter h1{
     animation: none;
+    overflow: visible;
+    border-right: 0 solid transparent; /* The typwriter cursor */
   }
 }
