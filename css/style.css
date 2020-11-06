@@ -470,7 +470,7 @@ input[type=submit]:hover {
 
 
 @media (prefers-reduced-motion: reduce) {
-  .typewriter h1: {
+  .typewriter h1{
     animation: none;
   }
 }
