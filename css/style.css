@@ -260,7 +260,6 @@ footer p{
   background-color: transparent;
   width: 300px;
   height: 400px;
-  border: 1px solid #f1f1f1;
   margin: auto;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -439,39 +438,57 @@ input[type=submit]:hover {
   .projects{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-content: center;
-    justify-content: center;
-    align-self: center;
-    margin: 0 auto;
-    
+    margin: 0 auto; 
   }
 
-  .about{
+  ul{
     display: flex;
     flex-direction: row;
+    margin:2px;
+    padding: 4px;
   }
 
-  header{
-    flex-direction: row;
-    justify-content: space-between;
-
-  }
-
-  .nav_links{
-    flex-direction: row;
-    justify-content: space-between;
+  .test{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
   }
 
-  .nav_item a{
-    padding: 10px;
+  .flip-card{
+    margin-right: 0;
   }
+  
+
+
+
+
+  .images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #parallax{
+  grid-column: span 2;
+  }
+
+.ti { 
+  text-align: center;
+  }
+
+
+
+  }
+
+
+
+
 }
-
 
 @media (prefers-reduced-motion: reduce) {
   .typewriter h1{
     animation: none;
     overflow: visible;
     border-right: 0 solid transparent; /* The typwriter cursor */
+
+
   }
